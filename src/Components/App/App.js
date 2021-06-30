@@ -1,12 +1,14 @@
 
 import React from 'react'
 import './App.css';
-import '../SearchBar/SearchBar'
-import '../SearchResults/SearchResults'
-
-class App extends React.Compenent {
+import SearchBar from '../SearchBar/SearchBar'
+import SearchResults from '../SearchResults/SearchResults'
+import TrackList from '../TrackList/TrackList'
+import Playlist from '../Playlist/Playlist'
+class App extends React.Component {
 	render() {
-	<div>
+    return( 
+    <div>
        <h1>Ja<span className="highlight">mmm</span>ing</h1>
        <div className="App">
         <SearchBar />
@@ -16,6 +18,7 @@ class App extends React.Compenent {
             </div>
        </div>
     </div>
-	}
+	);
+    }
 }
 export default App;
