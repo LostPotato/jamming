@@ -4,8 +4,11 @@
     "\\public",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\App"
+    "\\src\\Components\\Playlist",
+    "\\src\\Components\\SearchResults",
+    "\\src\\Components\\Track",
+    "\\src\\Components\\TrackList"
   ],
-  "SelectedNode": "\\src\\Components\\App\\App.js",
+  "SelectedNode": "\\src\\Components\\Track\\Track.js",
   "PreviewInSolutionExplorer": false
 }
