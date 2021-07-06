@@ -22,7 +22,7 @@ class App extends React.Component {
     }
     addTrack(track) {
         let tracks = this.state.PlaylistTracks;
-        if(tracks.find(savedTrack => savedTrack.id == track.id)) {
+        if(tracks.find(savedTrack => savedTrack.id === track.id)) {
             return;
         }
         tracks.push(track)
