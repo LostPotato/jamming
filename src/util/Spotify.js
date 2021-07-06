@@ -2,7 +2,7 @@
 // JavaScript source code
 let userToken;
 const clientID = '33b4ed8fc3504533964bf54fd698c058';
-const redirectURL = 'http://localhost:3000/';
+const redirectURL = 'SpotifyThis.surge.sh';
 const Spotify = {
     getAccessToken() {
         if (userToken) {
