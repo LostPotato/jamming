@@ -26,6 +26,14 @@ export class Track extends React.Component{
 		if (this.props.onRemove) {
 			this.props.onRemove(this.props.track)
         }
+	}
+	showPreview() {
+		if (this.props.track.preview_url === null) {
+			return;
+		}
+		else if (!this.props.isRemoval) {
+			return <audio controls> <source src={this.props.track.preview_url} type="audio/mpeg" /> Your browser does not support audio </audio>
+        }
     }
 	render() {
 		return (
@@ -33,6 +41,7 @@ export class Track extends React.Component{
 				<div className="Track-Information">
 					<h3>{this.props.track.name}</h3>
 					<p>{this.props.track.artist} || {this.props.track.album} </p>
+					{this.showPreview()}
 				</div>
 				{this.renderAction()}
 			</div>

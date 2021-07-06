@@ -43,12 +43,14 @@ const Spotify = {
                 if (!jsonResponse.tracks) {
                     return [];
                 }
+                console.log(jsonResponse)
                 return jsonResponse.tracks.items.map(track => ({
                     id: track.id,
                     name: track.name,
                     artist: track.artists[0].name,
                     album: track.album.name,
-                    uri: track.uri
+                    uri: track.uri,
+                    preview_url: track.preview_url
                 }));
             });
     },
@@ -70,6 +72,8 @@ const Spotify = {
         ).then(response => response.json()
         ).then(jsonResponse => {
             userId = jsonResponse.id;
+            console.log(userId)
+            // After the user id, is grabbed when then are able to make a request to grab the list of playlist from spotify
             return fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
                 headers: headers,
                 method: 'POST',
@@ -77,6 +81,7 @@ const Spotify = {
             }).then(response => response.json()
             ).then(jsonResponse => {
                 const playlistId = jsonResponse.id;
+                // With the playlisy ID we now have an ability to post the new playlist with tracks to the user profile
                 return fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
                     headers: headers,
                     method: 'POST',

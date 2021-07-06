@@ -3,13 +3,14 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\Components",
     "\\src\\Components\\App",
     "\\src\\Components\\Playlist",
+    "\\src\\Components\\SearchBar",
     "\\src\\Components\\SearchResults",
     "\\src\\Components\\Track",
-    "\\src\\Components\\TrackList"
+    "\\src\\Components\\TrackList",
+    "\\src\\util"
   ],
-  "SelectedNode": "\\src\\Components\\App\\App.js",
+  "SelectedNode": "\\src\\util\\Spotify.js",
   "PreviewInSolutionExplorer": false
 }

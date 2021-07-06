@@ -12,16 +12,12 @@ class SearchBar extends React.Component{
 	}
 	handleChange(e) {
 		let searchTerm = e.target.value;
-		console.log(searchTerm)
-		if (!searchTerm) {
-			searchTerm = 'elvis'
-        }
 		this.setState({ term: searchTerm });
     }
 	render() {
 	return(
 	<div className="SearchBar">
-			<input placeholder="Enter A Song, Album, or Artist" onChange={this.handleChange} defaultValue='elvis'/>
+			<input placeholder="Enter A Song, Album, or Artist" onChange={this.handleChange}/>
 			<button className="SearchButton" onClick={this.search} >SEARCH</button>
 	</div>
 	)};
