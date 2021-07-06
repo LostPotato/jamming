@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
+    "\\src\\Components",
     "\\src\\Components\\App",
     "\\src\\Components\\Playlist",
     "\\src\\Components\\SearchBar",
@@ -11,6 +11,6 @@
     "\\src\\Components\\TrackList",
     "\\src\\util"
   ],
-  "SelectedNode": "\\src\\util\\Spotify.js",
+  "SelectedNode": "\\src\\Components\\App\\App.js",
   "PreviewInSolutionExplorer": false
 }
